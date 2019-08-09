@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_events">Eventi</string>
+    <string name="menu_team">Chi Siamo</string>
+    <string name="menu_photo">Foto</string>
+    <string name="menu_contacts">Contatti</string>
+</resources>
