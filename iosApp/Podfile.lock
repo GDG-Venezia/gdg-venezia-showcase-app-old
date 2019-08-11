@@ -1,0 +1,55 @@
+PODS:
+  - MaterialComponents/AnimationTiming (85.12.0)
+  - MaterialComponents/BottomNavigation (85.12.0):
+    - MaterialComponents/Elevation
+    - MaterialComponents/Ink
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - "MaterialComponents/BottomNavigation+ColorThemer (85.12.0)":
+    - MaterialComponents/BottomNavigation
+    - MaterialComponents/schemes/Color
+  - MaterialComponents/Elevation (85.12.0):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/Ink (85.12.0):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/Palettes (85.12.0)
+  - MaterialComponents/private/Application (85.12.0)
+  - MaterialComponents/private/Color (85.12.0)
+  - MaterialComponents/private/Math (85.12.0)
+  - MaterialComponents/Ripple (85.12.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/schemes/Color (85.12.0):
+    - MaterialComponents/private/Color
+  - MaterialComponents/ShadowElevations (85.12.0)
+  - MaterialComponents/ShadowLayer (85.12.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/Typography (85.12.0):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+  - MDFInternationalization (2.0.0)
+
+DEPENDENCIES:
+  - MaterialComponents/BottomNavigation
+  - "MaterialComponents/BottomNavigation+ColorThemer"
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MaterialComponents
+    - MDFInternationalization
+
+SPEC CHECKSUMS:
+  MaterialComponents: 2faa36425ad1cdeca6a2595efe4cf48fce3618c7
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+
+PODFILE CHECKSUM: eae2d0cd3474f56eec16f586c306ca06379ac5cd
+
+COCOAPODS: 1.6.1
