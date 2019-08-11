@@ -3,7 +3,7 @@ import MaterialComponents.MDCBottomNavigationBar
 import MaterialComponents.MaterialBottomNavigation_ColorThemer
 import MaterialComponents.MaterialColorScheme
 
-class MainViewController: UITabBarController, MDCBottomNavigationBarDelegate {
+class MainViewController: UITabBarController, MDCBottomNavigationBarDelegate{
     
     @objc var colorScheme = MDCSemanticColorScheme()
     let bottomNavBar = MDCBottomNavigationBar()

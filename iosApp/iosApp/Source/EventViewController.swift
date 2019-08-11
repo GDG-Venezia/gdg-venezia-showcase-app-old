@@ -10,13 +10,17 @@ import app
 
 class EventViewController: UIViewController, EventListView {
 
-    private lazy var presenter = ServiceLocator.init().eventListPresenter
-
+    @IBOutlet weak var labelToolbar: UILabel!
+    @IBOutlet weak var collectionView: UICollectionView!
+    private lazy var presenter = ServiceLocator.init().eventListPresenter    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.labelToolbar.text = "GDG Venezia"
+        self.labelToolbar.font = Fonts.get(.regular, size: Fonts.Sizes.xLarge)
+    
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,6 +38,7 @@ class EventViewController: UIViewController, EventListView {
     func renderEventList(eventList: [EventModel]) {
         for event in eventList {
             //            label.text = (label.text ?? "") + event.title + ", "
+            print(event)
         }
     }
     

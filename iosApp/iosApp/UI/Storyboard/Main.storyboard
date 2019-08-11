@@ -58,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fPT-ax-HTv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1445" y="-1196"/>
+            <point key="canvasLocation" x="-497" y="-1183"/>
         </scene>
         <!--Contacts-->
         <scene sceneID="EGP-60-bSC">
@@ -83,32 +83,73 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sHB-4w-u8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1444.9275362318842" y="-505.58035714285711"/>
+            <point key="canvasLocation" x="1445" y="-1183"/>
         </scene>
         <!--Events-->
         <scene sceneID="I2m-Pv-anH">
             <objects>
-                <viewController id="3cL-Fm-Lk5" userLabel="Events" sceneMemberID="viewController">
+                <viewController id="3cL-Fm-Lk5" userLabel="Events" customClass="EventViewController" customModule="iosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pfu-y8-uuP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eventi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Da2-JJ-UOq">
-                                <rect key="frame" x="186" y="438" width="47" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gdg_logo" translatesAutoresizingMaskIntoConstraints="NO" id="z8E-WY-efp">
+                                <rect key="frame" x="20" y="64" width="66" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="crb-dD-KYu"/>
+                                    <constraint firstAttribute="width" constant="66" id="j42-qB-BFg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gE2-Bh-Iqy">
+                                <rect key="frame" x="106" y="64" width="42" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kfo-eq-Bis">
+                                <rect key="frame" x="0.0" y="116" width="414" height="697"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="n0O-u3-z2O">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Pd7-ec-RPz">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gE2-Bh-Iqy" firstAttribute="centerY" secondItem="z8E-WY-efp" secondAttribute="centerY" id="4ul-de-Lyo"/>
+                            <constraint firstItem="z8E-WY-efp" firstAttribute="leading" secondItem="ANZ-rD-agQ" secondAttribute="leading" constant="20" id="7eK-0t-wEn"/>
+                            <constraint firstItem="gE2-Bh-Iqy" firstAttribute="top" secondItem="ANZ-rD-agQ" secondAttribute="top" constant="20" id="IQb-0z-M6b"/>
+                            <constraint firstItem="z8E-WY-efp" firstAttribute="top" secondItem="ANZ-rD-agQ" secondAttribute="top" constant="20" id="Ife-e3-oct"/>
+                            <constraint firstItem="gE2-Bh-Iqy" firstAttribute="leading" secondItem="z8E-WY-efp" secondAttribute="trailing" constant="20" id="Lh7-GR-hMV"/>
+                            <constraint firstItem="ANZ-rD-agQ" firstAttribute="bottom" secondItem="kfo-eq-Bis" secondAttribute="bottom" id="M8r-21-le7"/>
+                            <constraint firstItem="kfo-eq-Bis" firstAttribute="leading" secondItem="ANZ-rD-agQ" secondAttribute="leading" id="cJf-u4-beQ"/>
+                            <constraint firstItem="ANZ-rD-agQ" firstAttribute="trailing" secondItem="kfo-eq-Bis" secondAttribute="trailing" id="so1-YF-M7x"/>
+                            <constraint firstItem="kfo-eq-Bis" firstAttribute="top" secondItem="gE2-Bh-Iqy" secondAttribute="bottom" constant="20" id="yJj-wW-23y"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ANZ-rD-agQ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="qvL-0O-U8Q"/>
+                    <connections>
+                        <outlet property="collectionView" destination="kfo-eq-Bis" id="eA3-g4-3qg"/>
+                        <outlet property="labelToolbar" destination="gE2-Bh-Iqy" id="ZMV-Ng-d56"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c8d-uQ-C2b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1445" y="-2601"/>
+            <point key="canvasLocation" x="-497" y="-1886"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="QTd-p9-L4Y">
@@ -131,4 +172,7 @@
             <point key="canvasLocation" x="526" y="-1576"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gdg_logo" width="66.5" height="32"/>
+    </resources>
 </document>
