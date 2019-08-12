@@ -1,19 +1,24 @@
 package com.github.gdgvenezia.domain.usecases
 
+import com.github.gdgvenezia.domain.entities.EventListModel
 import com.github.gdgvenezia.domain.*
 import com.github.gdgvenezia.domain.entities.EventModel
 
 /**
  * @author Andrea Maglie
  */
-class GetEventListUseCase constructor(private val repository: Repository) {
+class GetEventListUseCase constructor(private val repository: Repository): UseCase<Unit, EventListModel> {
 
-    fun execute(params: Unit): Result<List<EventModel>> {
-        try {
-            val eventList = repository.getEventList()
-            return Result.Success(eventList)
+    override fun execute(params: Unit): Result<EventListModel> {
+        return try {
+            val pastEventList = repository.getPastEventList()
+            val futureEventList = repository.getFutureEventList()
+            Result.Success(EventListModel(
+                    pastEvents = pastEventList,
+                    futureEvents = futureEventList
+            ))
         } catch (e: Exception) {
-            return Result.Error(e)
+            Result.Error(e)
         }
     }
 }

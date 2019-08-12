@@ -31,10 +31,8 @@ class EventViewController: UIViewController, EventListView {
         presenter.detachView()
     }
     
-    func renderEventList(eventList: [EventModel]) {
-        for event in eventList {
-            //            label.text = (label.text ?? "") + event.title + ", "
-        }
+    func renderEventList(eventList: [EventListModel]) {
+        // TODO
     }
     
     func renderError(errorMessage: String) {

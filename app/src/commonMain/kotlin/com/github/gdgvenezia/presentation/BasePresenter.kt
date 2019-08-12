@@ -1,4 +1,4 @@
-package com.github.gdgvenezia.com.github.gdgvenezia.presentation
+package com.github.gdgvenezia.presentation
 
 /**
  * @author Andrea Maglie

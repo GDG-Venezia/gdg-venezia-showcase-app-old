@@ -5,5 +5,15 @@ package com.github.gdgvenezia.domain.entities
  */
 data class EventModel(
         val title: String,
-        val date: String // TODO: use https://github.com/korlibs/klock for dates
+        val date: EventDate
+)
+
+
+data class EventDate(
+        val day: Int,
+        val month: Int,
+        val year: Int,
+        val hour: Int,
+        val minute: Int = 0,
+        val epochInSeconds: Long
 )

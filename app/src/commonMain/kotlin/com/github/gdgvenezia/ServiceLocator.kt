@@ -1,8 +1,10 @@
-package com.github.gdgvenezia.com.github.gdgvenezia
+package com.github.gdgvenezia
 
-import com.github.gdgvenezia.com.github.gdgvenezia.presentation.events.EventListPresenter
+import com.github.gdgvenezia.presentation.events.TeamPresenter
 import com.github.gdgvenezia.data.RepositoryImpl
 import com.github.gdgvenezia.domain.usecases.GetEventListUseCase
+import com.github.gdgvenezia.domain.usecases.GetTeamUseCase
+import com.github.gdgvenezia.presentation.events.EventListPresenter
 import kotlin.native.concurrent.ThreadLocal
 
 /**
@@ -20,4 +22,7 @@ object ServiceLocator {
 
     val eventListPresenter: EventListPresenter
         get() = EventListPresenter(GetEventListUseCase(repository))
+
+    val teamPresenter: TeamPresenter
+        get() = TeamPresenter(GetTeamUseCase(repository))
 }

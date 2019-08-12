@@ -1,6 +1,8 @@
-package com.github.gdgvenezia.com.github.gdgvenezia.presentation.events
+package com.github.gdgvenezia.presentation.events
 
-import com.github.gdgvenezia.com.github.gdgvenezia.presentation.BasePresenter
+import com.github.gdgvenezia.domain.entities.EventListModel
+import com.github.gdgvenezia.presentation.BasePresenter
+import com.github.gdgvenezia.presentation.BaseView
 import com.github.gdgvenezia.domain.Result
 import com.github.gdgvenezia.domain.entities.EventModel
 import com.github.gdgvenezia.domain.usecases.GetEventListUseCase
@@ -27,11 +29,8 @@ class EventListPresenter constructor(private val getEventListUseCase: GetEventLi
 }
 
 
-interface EventListView {
+interface EventListView: BaseView {
 
-    fun renderEventList(eventList: List<EventModel>)
+    fun renderEventList(eventList: EventListModel)
 
-    fun renderError(errorMessage: String)
-
-    fun renderLoading(visible: Boolean)
 }

@@ -1,4 +1,4 @@
-package com.github.gdgvenezia.com.github.gdgvenezia
+package com.github.gdgvenezia
 
 import com.github.gdgvenezia.domain.entities.EventModel
 
