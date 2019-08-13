@@ -5,9 +5,10 @@ import android.view.View
 import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.github.gdgvenezia.com.github.gdgvenezia.ServiceLocator
-import com.github.gdgvenezia.com.github.gdgvenezia.format
-import com.github.gdgvenezia.com.github.gdgvenezia.presentation.events.EventListView
+import com.github.gdgvenezia.ServiceLocator
+import com.github.gdgvenezia.domain.entities.EventListModel
+import com.github.gdgvenezia.format
+import com.github.gdgvenezia.presentation.events.EventListView
 import com.github.gdgvenezia.domain.entities.EventModel
 
 class MainActivity : AppCompatActivity(), EventListView {
@@ -34,8 +35,8 @@ class MainActivity : AppCompatActivity(), EventListView {
         presenter.detachView()
     }
 
-    override fun renderEventList(eventList: List<EventModel>) {
-        text.text = eventList.format()
+    override fun renderEventList(eventList: EventListModel) {
+        text.text = eventList.futureEvents.plus(eventList.pastEvents).format()
     }
 
     override fun renderError(errorMessage: String) {
