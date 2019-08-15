@@ -26,7 +26,7 @@ class IconTextCell: UITableViewCell {
         self.container.backgroundColor = UIColor.white
         
         // add shadow on cell
-        backgroundColor = .clear // very important
+        backgroundColor = .clear 
         container.layer.masksToBounds = false
         container.layer.shadowOpacity = 0.23
         container.layer.shadowRadius = 4

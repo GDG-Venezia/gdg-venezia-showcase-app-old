@@ -32,6 +32,9 @@
 		A976D0B32300AFB000608750 /* IconTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A976D0B12300AFB000608750 /* IconTextCell.xib */; };
 		A976D0B52300B3A500608750 /* IconTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976D0B42300B3A500608750 /* IconTextCell.swift */; };
 		A976D0B62300B3A500608750 /* IconTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976D0B42300B3A500608750 /* IconTextCell.swift */; };
+		A9D45E362305E887006CA1C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9D45E382305E887006CA1C5 /* Localizable.strings */; };
+		A9D45E3B2305F3BF006CA1C5 /* IconImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9D45E3A2305F3BF006CA1C5 /* IconImageCell.xib */; };
+		A9D45E3D2305F519006CA1C5 /* IconImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D45E3C2305F519006CA1C5 /* IconImageCell.swift */; };
 		F861D7E1207FA40F0085E80D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861D7E0207FA40F0085E80D /* AppDelegate.swift */; };
 		F861D7E3207FA40F0085E80D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861D7E2207FA40F0085E80D /* MainViewController.swift */; };
 		F861D7E8207FA4100085E80D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F861D7E7207FA4100085E80D /* Assets.xcassets */; };
@@ -77,6 +80,7 @@
 		11615A80DEB27972ECC83F4E /* Pods-iosAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosAppTests.release.xcconfig"; path = "Target Support Files/Pods-iosAppTests/Pods-iosAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		64C377A95046A14406011CBE /* Pods_iosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A95BBA032305A06D00D8A624 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		A95BBA072305E5AD00D8A624 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		A976D08A22FEFCE100608750 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		A976D08C22FEFCEF00608750 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		A976D08E22FEFCFB00608750 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +95,10 @@
 		A976D0AC2300A8D400608750 /* DeviceScreenType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceScreenType.swift; sourceTree = "<group>"; };
 		A976D0B12300AFB000608750 /* IconTextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconTextCell.xib; sourceTree = "<group>"; };
 		A976D0B42300B3A500608750 /* IconTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTextCell.swift; sourceTree = "<group>"; };
+		A9D45E372305E887006CA1C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A9D45E392305E88F006CA1C5 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A9D45E3A2305F3BF006CA1C5 /* IconImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconImageCell.xib; sourceTree = "<group>"; };
+		A9D45E3C2305F519006CA1C5 /* IconImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconImageCell.swift; sourceTree = "<group>"; };
 		C6778B8BB3980A85672AB7D8 /* Pods-iosAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosAppTests.debug.xcconfig"; path = "Target Support Files/Pods-iosAppTests/Pods-iosAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3FFC8CD49C702CFC47679D4 /* Pods-iosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.release.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.release.xcconfig"; sourceTree = "<group>"; };
 		F861D7DD207FA40F0085E80D /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +180,7 @@
 		A976D09A2300A69600608750 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				A9D45E382305E887006CA1C5 /* Localizable.strings */,
 				A976D09B2300A6D300608750 /* fonts */,
 				F861D7E7207FA4100085E80D /* Assets.xcassets */,
 			);
@@ -214,6 +223,8 @@
 			children = (
 				A976D0B12300AFB000608750 /* IconTextCell.xib */,
 				A976D0B42300B3A500608750 /* IconTextCell.swift */,
+				A9D45E3A2305F3BF006CA1C5 /* IconImageCell.xib */,
+				A9D45E3C2305F519006CA1C5 /* IconImageCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -356,6 +367,7 @@
 			knownRegions = (
 				en,
 				Base,
+				it,
 			);
 			mainGroup = F861D7D4207FA40F0085E80D;
 			productRefGroup = F861D7DE207FA40F0085E80D /* Products */;
@@ -378,7 +390,9 @@
 				A976D0A22300A6FF00608750 /* Product-Sans-Bold.ttf in Resources */,
 				F861D7EB207FA4100085E80D /* LaunchScreen.storyboard in Resources */,
 				A976D0A62300A6FF00608750 /* Product-Sans-Regular.ttf in Resources */,
+				A9D45E362305E887006CA1C5 /* Localizable.strings in Resources */,
 				A976D0A42300A6FF00608750 /* Product-Sans-Bold-Italic.ttf in Resources */,
+				A9D45E3B2305F3BF006CA1C5 /* IconImageCell.xib in Resources */,
 				A976D0B22300AFB000608750 /* IconTextCell.xib in Resources */,
 				F861D7E8207FA4100085E80D /* Assets.xcassets in Resources */,
 				A976D0A02300A6FF00608750 /* Product-Sans-Italic.ttf in Resources */,
@@ -492,6 +506,7 @@
 			files = (
 				A976D0B52300B3A500608750 /* IconTextCell.swift in Sources */,
 				A95BBA042305A06D00D8A624 /* Colors.swift in Sources */,
+				A9D45E3D2305F519006CA1C5 /* IconImageCell.swift in Sources */,
 				F861D7E3207FA40F0085E80D /* MainViewController.swift in Sources */,
 				F861D7E1207FA40F0085E80D /* AppDelegate.swift in Sources */,
 				A976D08D22FEFCEF00608750 /* AboutViewController.swift in Sources */,
@@ -531,10 +546,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		A9D45E382305E887006CA1C5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9D45E372305E887006CA1C5 /* en */,
+				A9D45E392305E88F006CA1C5 /* it */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		F861D7E9207FA4100085E80D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F861D7EA207FA4100085E80D /* Base */,
+				A95BBA072305E5AD00D8A624 /* it */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -546,6 +571,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -608,6 +634,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

@@ -30,11 +30,10 @@ class MainViewController: UITabBarController, MDCBottomNavigationBarDelegate{
         bottomNavBar.alignment = .centered
         
         // Add items to the bottom navigation bar.
-        // TODO: Localize
-        let tabBarItem1 = UITabBarItem( title: "Eventi", image: UIImage(named: "icon_bar_events"), tag: 0 )
-        let tabBarItem2 = UITabBarItem( title: "Chi Siamo", image: UIImage(named: "icon_bar_about"), tag: 1 )
-        let tabBarItem3 = UITabBarItem( title: "Foto", image: UIImage(named: "icon_bar_photo"), tag: 2 )
-        let tabBarItem4 = UITabBarItem( title: "Contatti", image: UIImage(named: "icon_bar_contacts"), tag: 3 )
+        let tabBarItem1 = UITabBarItem( title: NSLocalizedString("BOTTOM_BAR_events", comment: ""), image: UIImage(named: "icon_bar_events"), tag: 0 )
+        let tabBarItem2 = UITabBarItem( title: NSLocalizedString("BOTTOM_BAR_about", comment: ""), image: UIImage(named: "icon_bar_about"), tag: 1 )
+        let tabBarItem3 = UITabBarItem( title: NSLocalizedString("BOTTOM_BAR_photo", comment: ""), image: UIImage(named: "icon_bar_photo"), tag: 2 )
+        let tabBarItem4 = UITabBarItem( title: NSLocalizedString("BOTTOM_BAR_contact", comment: ""), image: UIImage(named: "icon_bar_contacts"), tag: 3 )
         
         bottomNavBar.items = [ tabBarItem1, tabBarItem2, tabBarItem3, tabBarItem4 ]
         

@@ -22,6 +22,8 @@ class EventViewController: UIViewController, EventListView {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        presenter.attachView(view: self)
+        
         self.view.backgroundColor = Colors.backgroundColor
         
         self.labelToolbar.text = "GDG Venezia"
@@ -35,13 +37,6 @@ class EventViewController: UIViewController, EventListView {
         self.tableView.backgroundColor = Colors.backgroundColor
         self.tableView.translatesAutoresizingMaskIntoConstraints = false
         self.tableView.separatorStyle = .none
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        presenter.attachView(view: self)
-        self.navigationController?.setNavigationBarHidden( true, animated: animated )
-        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -68,27 +63,6 @@ class EventViewController: UIViewController, EventListView {
         self.pastEvents = eventList.pastEvents
         self.tableView.reloadData()
     }
-    
-    
-    /*
-     
-     data class EventModel(
-     val title: String,
-     val date: EventDate
-     )
-     
-     
-     data class EventDate(
-     val day: Int,
-     val month: Int,
-     val year: Int,
-     val hour: Int,
-     val minute: Int = 0,
-     val epochInSeconds: Long
-     )
-     
-     */
-    
 }
 
 extension EventViewController: UITableViewDelegate, UITableViewDataSource {
@@ -144,12 +118,11 @@ extension EventViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        // TODO: localize
         switch section {
         case 0:
-            return "Prossimi Eventi"
+            return NSLocalizedString("EVENTS_next", comment: "")
         case 1:
-            return "Eventi Passati"
+            return NSLocalizedString("EVENTS_past", comment: "")
         default:
             return nil
         }
