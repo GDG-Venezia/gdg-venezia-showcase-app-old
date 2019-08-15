@@ -25,11 +25,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gdg_logo" translatesAutoresizingMaskIntoConstraints="NO" id="UyQ-38-psc">
+                                <rect key="frame" x="20" y="64" width="66" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="Hto-vj-mCS"/>
+                                    <constraint firstAttribute="height" constant="32" id="wZK-SD-B54"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iX3-Y4-yNO">
+                                <rect key="frame" x="106" y="70" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iX3-Y4-yNO" firstAttribute="leading" secondItem="UyQ-38-psc" secondAttribute="trailing" constant="20" id="CFX-7X-Nn4"/>
+                            <constraint firstItem="UyQ-38-psc" firstAttribute="top" secondItem="X5n-b9-ZcA" secondAttribute="top" constant="20" id="FGc-41-XH7"/>
+                            <constraint firstItem="UyQ-38-psc" firstAttribute="leading" secondItem="X5n-b9-ZcA" secondAttribute="leading" constant="20" id="inq-MY-PaV"/>
+                            <constraint firstItem="iX3-Y4-yNO" firstAttribute="centerY" secondItem="UyQ-38-psc" secondAttribute="centerY" id="mVG-nc-ulO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="X5n-b9-ZcA"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="Zus-ki-hXx"/>
+                    <connections>
+                        <outlet property="labelToolbar" destination="iX3-Y4-yNO" id="29X-k8-cje"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="axQ-KJ-tCl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,11 +72,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gdg_logo" translatesAutoresizingMaskIntoConstraints="NO" id="72C-GC-kNl">
+                                <rect key="frame" x="20" y="64" width="66" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="99I-gl-dqY"/>
+                                    <constraint firstAttribute="width" constant="66" id="Y65-zh-wqV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbC-Vq-AnC">
+                                <rect key="frame" x="106" y="70" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="72C-GC-kNl" firstAttribute="top" secondItem="blU-c3-O5S" secondAttribute="top" constant="20" id="4Mm-Jl-kLA"/>
+                            <constraint firstItem="72C-GC-kNl" firstAttribute="leading" secondItem="blU-c3-O5S" secondAttribute="leading" constant="20" id="917-wv-0ls"/>
+                            <constraint firstItem="BbC-Vq-AnC" firstAttribute="leading" secondItem="72C-GC-kNl" secondAttribute="trailing" constant="20" id="IuX-vT-XSG"/>
+                            <constraint firstItem="BbC-Vq-AnC" firstAttribute="centerY" secondItem="72C-GC-kNl" secondAttribute="centerY" id="xlh-nw-r6R"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="blU-c3-O5S"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="0UN-X5-BA9"/>
+                    <connections>
+                        <outlet property="labelToolbar" destination="BbC-Vq-AnC" id="9xw-Yi-pCl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fPT-ax-HTv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -75,11 +119,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gdg_logo" translatesAutoresizingMaskIntoConstraints="NO" id="tAE-ii-rgl">
+                                <rect key="frame" x="20" y="64" width="66" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="6uX-7F-LvJ"/>
+                                    <constraint firstAttribute="height" constant="32" id="Eq5-YS-Zwy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zo-Q9-uPg">
+                                <rect key="frame" x="106" y="70" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tAE-ii-rgl" firstAttribute="top" secondItem="jfL-9p-1iJ" secondAttribute="top" constant="20" id="azB-Ol-zXk"/>
+                            <constraint firstItem="7zo-Q9-uPg" firstAttribute="centerY" secondItem="tAE-ii-rgl" secondAttribute="centerY" id="bZe-ku-MS9"/>
+                            <constraint firstItem="tAE-ii-rgl" firstAttribute="leading" secondItem="jfL-9p-1iJ" secondAttribute="leading" constant="20" id="igR-5H-sy8"/>
+                            <constraint firstItem="7zo-Q9-uPg" firstAttribute="leading" secondItem="tAE-ii-rgl" secondAttribute="trailing" constant="20" id="xaY-SB-dNA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jfL-9p-1iJ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="O7d-00-dzU"/>
+                    <connections>
+                        <outlet property="labelToolbar" destination="7zo-Q9-uPg" id="7Bz-Ig-fjb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sHB-4w-u8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

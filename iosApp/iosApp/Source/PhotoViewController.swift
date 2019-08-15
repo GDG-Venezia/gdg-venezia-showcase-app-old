@@ -9,10 +9,15 @@ import UIKit
 
 class PhotoViewController: UIViewController {
 
+    @IBOutlet weak var labelToolbar: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = Colors.backgroundColor
+        
+        self.labelToolbar.text = "GDG Venezia"
+        self.labelToolbar.font = Fonts.get(.regular, size: Fonts.Sizes.xLarge)
     }
     
 
