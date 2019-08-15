@@ -137,13 +137,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contatti" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYc-Bf-liR">
-                                <rect key="frame" x="186" y="438" width="62" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gdg_logo" translatesAutoresizingMaskIntoConstraints="NO" id="tAE-ii-rgl">
                                 <rect key="frame" x="20" y="64" width="66" height="32"/>
                                 <constraints>
@@ -157,12 +150,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vW0-7L-cBh">
+                                <rect key="frame" x="0.0" y="136" width="414" height="677"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="jfL-9p-1iJ" firstAttribute="bottom" secondItem="vW0-7L-cBh" secondAttribute="bottom" id="EPZ-H0-zrb"/>
+                            <constraint firstItem="jfL-9p-1iJ" firstAttribute="trailing" secondItem="vW0-7L-cBh" secondAttribute="trailing" id="YX3-sW-DZh"/>
                             <constraint firstItem="tAE-ii-rgl" firstAttribute="top" secondItem="jfL-9p-1iJ" secondAttribute="top" constant="20" id="azB-Ol-zXk"/>
                             <constraint firstItem="7zo-Q9-uPg" firstAttribute="centerY" secondItem="tAE-ii-rgl" secondAttribute="centerY" id="bZe-ku-MS9"/>
+                            <constraint firstItem="vW0-7L-cBh" firstAttribute="leading" secondItem="jfL-9p-1iJ" secondAttribute="leading" id="e8Y-96-bqo"/>
                             <constraint firstItem="tAE-ii-rgl" firstAttribute="leading" secondItem="jfL-9p-1iJ" secondAttribute="leading" constant="20" id="igR-5H-sy8"/>
+                            <constraint firstItem="vW0-7L-cBh" firstAttribute="top" secondItem="tAE-ii-rgl" secondAttribute="bottom" constant="40" id="wJx-wQ-kTV"/>
                             <constraint firstItem="7zo-Q9-uPg" firstAttribute="leading" secondItem="tAE-ii-rgl" secondAttribute="trailing" constant="20" id="xaY-SB-dNA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jfL-9p-1iJ"/>
@@ -170,6 +171,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="O7d-00-dzU"/>
                     <connections>
                         <outlet property="labelToolbar" destination="7zo-Q9-uPg" id="7Bz-Ig-fjb"/>
+                        <outlet property="tableView" destination="vW0-7L-cBh" id="HF7-Pv-PB2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sHB-4w-u8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
