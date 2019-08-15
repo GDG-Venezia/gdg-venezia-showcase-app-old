@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		08E871577ED353F7F83C3339 /* Pods_iosAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE561FCEF8BEB6F8EAB6C3C /* Pods_iosAppTests.framework */; };
 		3B24978624AA8D8BF11D29A7 /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C377A95046A14406011CBE /* Pods_iosApp.framework */; };
+		A95BBA042305A06D00D8A624 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95BBA032305A06D00D8A624 /* Colors.swift */; };
 		A976D08B22FEFCE100608750 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976D08A22FEFCE100608750 /* EventViewController.swift */; };
 		A976D08D22FEFCEF00608750 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976D08C22FEFCEF00608750 /* AboutViewController.swift */; };
 		A976D08F22FEFCFB00608750 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976D08E22FEFCFB00608750 /* PhotoViewController.swift */; };
@@ -75,6 +76,7 @@
 		0CE561FCEF8BEB6F8EAB6C3C /* Pods_iosAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11615A80DEB27972ECC83F4E /* Pods-iosAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosAppTests.release.xcconfig"; path = "Target Support Files/Pods-iosAppTests/Pods-iosAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		64C377A95046A14406011CBE /* Pods_iosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A95BBA032305A06D00D8A624 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		A976D08A22FEFCE100608750 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		A976D08C22FEFCEF00608750 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		A976D08E22FEFCFB00608750 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				A976D098230094B600608750 /* Extensions.swift */,
 				A976D0A92300A7C300608750 /* Fonts.swift */,
 				A976D0AC2300A8D400608750 /* DeviceScreenType.swift */,
+				A95BBA032305A06D00D8A624 /* Colors.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iosApp/Pods-iosApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
 				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
 			);
@@ -413,6 +417,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
 			);
@@ -486,6 +491,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A976D0B52300B3A500608750 /* IconTextCell.swift in Sources */,
+				A95BBA042305A06D00D8A624 /* Colors.swift in Sources */,
 				F861D7E3207FA40F0085E80D /* MainViewController.swift in Sources */,
 				F861D7E1207FA40F0085E80D /* AppDelegate.swift in Sources */,
 				A976D08D22FEFCEF00608750 /* AboutViewController.swift in Sources */,

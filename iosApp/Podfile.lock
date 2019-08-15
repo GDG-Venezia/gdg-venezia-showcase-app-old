@@ -1,6 +1,6 @@
 PODS:
-  - MaterialComponents/AnimationTiming (85.12.0)
-  - MaterialComponents/BottomNavigation (85.12.0):
+  - MaterialComponents/AnimationTiming (87.0.0)
+  - MaterialComponents/BottomNavigation (87.0.0):
     - MaterialComponents/Elevation
     - MaterialComponents/Ink
     - MaterialComponents/Palettes
@@ -10,46 +10,50 @@ PODS:
     - MaterialComponents/ShadowLayer
     - MaterialComponents/Typography
     - MDFInternationalization
-  - "MaterialComponents/BottomNavigation+ColorThemer (85.12.0)":
+  - "MaterialComponents/BottomNavigation+ColorThemer (87.0.0)":
     - MaterialComponents/BottomNavigation
     - MaterialComponents/schemes/Color
-  - MaterialComponents/Elevation (85.12.0):
+  - MaterialComponents/Elevation (87.0.0):
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/Ink (85.12.0):
+  - MaterialComponents/Ink (87.0.0):
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/Palettes (85.12.0)
-  - MaterialComponents/private/Application (85.12.0)
-  - MaterialComponents/private/Color (85.12.0)
-  - MaterialComponents/private/Math (85.12.0)
-  - MaterialComponents/Ripple (85.12.0):
+  - MaterialComponents/Palettes (87.0.0)
+  - MaterialComponents/private/Application (87.0.0)
+  - MaterialComponents/private/Color (87.0.0)
+  - MaterialComponents/private/Math (87.0.0)
+  - MaterialComponents/Ripple (87.0.0):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/schemes/Color (85.12.0):
+  - MaterialComponents/schemes/Color (87.0.0):
     - MaterialComponents/private/Color
-  - MaterialComponents/ShadowElevations (85.12.0)
-  - MaterialComponents/ShadowLayer (85.12.0):
+  - MaterialComponents/ShadowElevations (87.0.0)
+  - MaterialComponents/ShadowLayer (87.0.0):
     - MaterialComponents/ShadowElevations
-  - MaterialComponents/Typography (85.12.0):
+  - MaterialComponents/Typography (87.0.0):
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
+  - MBProgressHUD (1.1.0)
   - MDFInternationalization (2.0.0)
 
 DEPENDENCIES:
   - MaterialComponents/BottomNavigation
   - "MaterialComponents/BottomNavigation+ColorThemer"
+  - MBProgressHUD
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - MaterialComponents
+    - MBProgressHUD
     - MDFInternationalization
 
 SPEC CHECKSUMS:
-  MaterialComponents: 2faa36425ad1cdeca6a2595efe4cf48fce3618c7
+  MaterialComponents: 37478e606a0b4bb41e25c03cdf3be9e35fe59b78
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
 
-PODFILE CHECKSUM: eae2d0cd3474f56eec16f586c306ca06379ac5cd
+PODFILE CHECKSUM: 796d493dbb8d55aec33842693287fd9cce84bc90
 
 COCOAPODS: 1.6.1
