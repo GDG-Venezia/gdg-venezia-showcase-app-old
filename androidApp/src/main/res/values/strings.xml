@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="menu_events">Eventi</string>
-    <string name="menu_team">Chi Siamo</string>
-    <string name="menu_photo">Foto</string>
-    <string name="menu_contacts">Contatti</string>
+    <string name="BOTTOM_BAR_events">Events</string>
+    <string name="BOTTOM_BAR_about">About</string>
+    <string name="BOTTOM_BAR_photo">Photo</string>
+    <string name="BOTTOM_BAR_contact">Contacts</string>
+    <string name="EVENTS_next">Next Events</string>
+    <string name="EVENTS_past">Past Events</string>
+    <string name="ABOUT_organizers">Organizers</string>
 </resources>

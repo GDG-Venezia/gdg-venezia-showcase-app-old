@@ -13,16 +13,16 @@ import com.github.gdgvenezia.domain.entities.EventModel
 
 class MainActivity : AppCompatActivity(), EventListView {
 
-    private lateinit var text: TextView
-    private lateinit var progress: ProgressBar
+//    private lateinit var text: TextView
+//    private lateinit var progress: ProgressBar
 
     private val presenter by lazy { ServiceLocator.eventListPresenter }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        text = findViewById(R.id.text)
-        progress = findViewById(R.id.progress)
+//        text = findViewById(R.id.text)
+//        progress = findViewById(R.id.progress)
     }
 
     override fun onStart() {
@@ -36,14 +36,14 @@ class MainActivity : AppCompatActivity(), EventListView {
     }
 
     override fun renderEventList(eventList: EventListModel) {
-        text.text = eventList.futureEvents.plus(eventList.pastEvents).format()
+//        text.text = eventList.futureEvents.plus(eventList.pastEvents).format()
     }
 
     override fun renderError(errorMessage: String) {
-        text.text = errorMessage
+//        text.text = errorMessage
     }
 
     override fun renderLoading(visible: Boolean) {
-        progress.visibility = if (visible) View.VISIBLE else View.GONE
+//        progress.visibility = if (visible) View.VISIBLE else View.GONE
     }
 }
