@@ -11,9 +11,9 @@ import com.github.gdgvenezia.domain.entities.TeamMemberModel
  */
 class RepositoryImpl: Repository {
 
-    private val event1 = EventModel(title = "Evento 1", date = EventDate(2019, 1, 30, hour = 18, minute = 30, epochInSeconds = 1548869400))
-    private val event3 = EventModel(title = "Evento 3", date = EventDate(2019, 9, 10, hour = 19, epochInSeconds = 1568134800))
-    private val event2 = EventModel(title = "Evento 2", date = EventDate(2019, 6, 5, hour = 21, epochInSeconds = 1559761200))
+    private val event1 = EventModel(title = "Evento 1", date = EventDate(30, 1, 2019, hour = 18, minute = 30, epochInSeconds = 1548869400))
+    private val event3 = EventModel(title = "Evento 3", date = EventDate(10, 9, 2019, hour = 19, epochInSeconds = 1568134800))
+    private val event2 = EventModel(title = "Evento 2", date = EventDate(5, 6, 2019, hour = 21, epochInSeconds = 1559761200))
 
     override fun getEventList(): List<EventModel> {
         return listOf(
