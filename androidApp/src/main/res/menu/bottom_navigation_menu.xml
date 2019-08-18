@@ -16,6 +16,6 @@
 
     <item android:id="@+id/menu_contacts"
           android:icon="@drawable/ic_menu_contacts"
-          android:title="@string/BOTTOM_BAR_contact"/>
+          android:title="@string/BOTTOM_BAR_contacts"/>
 
 </menu>
