@@ -50,7 +50,7 @@ class RepositoryImpl: Repository {
                     pictureUrl = "",
                     shortDescription = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem",
                     longDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
-                    twitterUrl = "",
+                    twitterUrl = "https://twitter.com/TechIsFun",
                     linkedinUrl = ""),
                 TeamMemberModel(
                         firstname = "Marco",
@@ -58,7 +58,7 @@ class RepositoryImpl: Repository {
                         pictureUrl = "",
                         shortDescription = "Lorem ipsum",
                         longDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
-                        twitterUrl = "",
+                        twitterUrl = "https://twitter.com/marcoGomier",
                         linkedinUrl = ""),
                 TeamMemberModel(
                         firstname = "Simone",
@@ -66,7 +66,7 @@ class RepositoryImpl: Repository {
                         pictureUrl = "",
                         shortDescription = "Consectetur adipiscing elit",
                         longDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
-                        twitterUrl = "",
+                        twitterUrl = "https://twitter.com/SimoneFormica",
                         linkedinUrl = ""),
                 TeamMemberModel(
                         firstname = "Omar",
@@ -75,7 +75,7 @@ class RepositoryImpl: Repository {
                         shortDescription = "Excepteur sint occaecat cupidatat non proident",
                         longDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
                         twitterUrl = "",
-                        linkedinUrl = "")
+                        linkedinUrl = "https://linkedin.com/in/omar-al-bukhari-01776b111")
                 )
     }
 }
