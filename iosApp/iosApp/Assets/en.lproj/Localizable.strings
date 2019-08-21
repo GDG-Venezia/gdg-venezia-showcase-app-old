@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  iosApp
+
+  Created by Marco Gomiero on 15/08/2019.
+  
+*/
+"BOTTOM_BAR_events" = "Events";
+"BOTTOM_BAR_about" = "About";
+"BOTTOM_BAR_photo" = "Photo";
+"BOTTOM_BAR_contact" = "Contacts";
+"EVENTS_next" = "Next Events";
+"EVENTS_past" = "Past Events";
+"ABOUT_organizers" = "Organizers";
