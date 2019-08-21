@@ -1,5 +1,6 @@
 package com.github.gdgvenezia.data
 
+import com.github.gdgvenezia.com.github.gdgvenezia.domain.entities.SocialLinkModel
 import com.github.gdgvenezia.domain.Repository
 import com.github.gdgvenezia.domain.entities.EventDate
 import com.github.gdgvenezia.domain.entities.EventModel
@@ -77,5 +78,50 @@ class RepositoryImpl: Repository {
                         twitterUrl = "",
                         linkedinUrl = "https://linkedin.com/in/omar-al-bukhari-01776b111")
                 )
+    }
+
+    override fun getSocialLinkList(): List<SocialLinkModel> {
+        return listOf(
+                SocialLinkModel(
+                        title = "Facebook",
+                        code = "facebook",
+                        url = "https://www.facebook.com/gdgvenezia"
+                ),
+                SocialLinkModel(
+                        title = "Twitter",
+                        code = "twitter",
+                        url = "https://twitter.com/gdgvenezia"
+                ),
+                SocialLinkModel(
+                        title = "YouTube",
+                        code = "youtube",
+                        url = "https://www.youtube.com/channel/UCnXHsg8plcHc_NuCETV2k6Q"
+                ),
+                SocialLinkModel(
+                        title = "Meetup",
+                        code = "meetup",
+                        url = "https://www.meetup.com/it-IT/GDG-Venezia"
+                ),
+                SocialLinkModel(
+                        title = "Instagram",
+                        code = "instagram",
+                        url = "https://www.instagram.com/gdg_venezia"
+                ),
+                SocialLinkModel(
+                        title = "GitHub",
+                        code = "github",
+                        url = "https://github.com/GDG-Venezia"
+                ),
+                SocialLinkModel(
+                        title = "Telegram",
+                        code = "telegram",
+                        url = "https://telegram.me/joinchat/CrhySAbNTvs7BZACfpQyyQ"
+                ),
+                SocialLinkModel(
+                        title = "Mail",
+                        code = "mail",
+                        url = "mailto:veneziagdg@gmail.com"
+                )
+        )
     }
 }

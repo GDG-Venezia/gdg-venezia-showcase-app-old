@@ -4,9 +4,11 @@ import com.github.gdgvenezia.presentation.events.TeamPresenter
 import com.github.gdgvenezia.data.RepositoryImpl
 import com.github.gdgvenezia.domain.usecases.GetEventListUseCase
 import com.github.gdgvenezia.domain.usecases.GetPhotoUseCase
+import com.github.gdgvenezia.domain.usecases.GetSocialLinkListUseCase
 import com.github.gdgvenezia.domain.usecases.GetTeamUseCase
 import com.github.gdgvenezia.presentation.events.EventListPresenter
 import com.github.gdgvenezia.presentation.photos.PhotoPresenter
+import com.github.gdgvenezia.presentation.social.SocialPresenter
 import kotlin.native.concurrent.ThreadLocal
 
 /**
@@ -30,5 +32,8 @@ object ServiceLocator {
 
     val photoPresenter: PhotoPresenter
         get() = PhotoPresenter(GetPhotoUseCase(repository))
+
+    val socialPresenter: SocialPresenter
+        get() = SocialPresenter(GetSocialLinkListUseCase(repository))
 
 }
