@@ -46,7 +46,11 @@ class EventsFragment : Fragment(), EventListView {
         futureTitle = view.findViewById(R.id.EVENTS_future_title)
 
         futureRecyclerView.isNestedScrollingEnabled = false
+        futureRecyclerView.adapter = futureEventsAdapter
+
         pastRecyclerView.isNestedScrollingEnabled = false
+        pastRecyclerView.adapter = pastEventsAdapter
+
     }
 
     override fun renderEventList(eventList: EventListModel) {
@@ -55,11 +59,8 @@ class EventsFragment : Fragment(), EventListView {
             futureRecyclerView.visibility = View.GONE
         } else {
             futureEventsAdapter.items = eventList.futureEvents
-            futureRecyclerView.adapter = futureEventsAdapter
         }
-
         pastEventsAdapter.items = eventList.pastEvents
-        pastRecyclerView.adapter = pastEventsAdapter
 
         pastEventsAdapter.notifyDataSetChanged()
         futureEventsAdapter.notifyDataSetChanged()
