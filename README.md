@@ -25,6 +25,13 @@ I componenti grafici di Android e iOS saranno responsabili di implementare le in
 To compile the project from Xcode just open `iosApp/iosApp.xcodeproj` and run the application.
 The [swift tests](iosApp/iosAppTests/iosAppTests.swift) also can be executed from Xcode.
 
+After cloning the project, remember to install the Pod
+
+```
+  > cd iosApp
+  > pod install
+```
+
 To compile a framework for ios simulator from the command line execute:
 
 ```
