@@ -164,13 +164,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vW0-7L-cBh">
-                                <rect key="frame" x="0.0" y="136" width="414" height="677"/>
+                                <rect key="frame" x="0.0" y="136" width="414" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="jfL-9p-1iJ" firstAttribute="bottom" secondItem="vW0-7L-cBh" secondAttribute="bottom" id="EPZ-H0-zrb"/>
+                            <constraint firstItem="jfL-9p-1iJ" firstAttribute="bottom" secondItem="vW0-7L-cBh" secondAttribute="bottom" constant="10" id="EPZ-H0-zrb"/>
                             <constraint firstItem="jfL-9p-1iJ" firstAttribute="trailing" secondItem="vW0-7L-cBh" secondAttribute="trailing" id="YX3-sW-DZh"/>
                             <constraint firstItem="tAE-ii-rgl" firstAttribute="top" secondItem="jfL-9p-1iJ" secondAttribute="top" constant="20" id="azB-Ol-zXk"/>
                             <constraint firstItem="7zo-Q9-uPg" firstAttribute="centerY" secondItem="tAE-ii-rgl" secondAttribute="centerY" id="bZe-ku-MS9"/>

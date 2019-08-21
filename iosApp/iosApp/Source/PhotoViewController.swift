@@ -18,7 +18,6 @@ class PhotoViewController: UIViewController, PhotoView, CustomLayoutDelegate  {
     
     private var photos = [PhotoModel]()
     
-    
     private let itemsPerRow: CGFloat = 2
     
     public var customCollectionViewLayout: PhotoCollectionViewLayout? {

@@ -6,24 +6,29 @@
 //
 
 import UIKit
+import app
+import MaterialComponents.MaterialSnackbar
 
-class ContactsViewController: UIViewController {
+class ContactsViewController: UIViewController, SocialView {
 
     @IBOutlet weak var labelToolbar: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-    // TODO: change
-    private var socialList = [String]()
+    private lazy var presenter = ServiceLocator.init().socialPresenter
+
+    private var socialList = [SocialLinkModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        presenter.attachView(view: self)
+        
         self.view.backgroundColor = Colors.backgroundColor
         
         self.labelToolbar.text = "GDG Venezia"
         self.labelToolbar.font = Fonts.get(.regular, size: Fonts.Sizes.xLarge)
         
-        let eventCell = UINib(nibName: "IconImageCell", bundle: nil)
+        let eventCell = UINib(nibName: "SocialCell", bundle: nil)
         self.tableView.register(eventCell, forCellReuseIdentifier: "SocialCell")
         
         self.tableView.dataSource = self
@@ -32,17 +37,40 @@ class ContactsViewController: UIViewController {
         self.tableView.translatesAutoresizingMaskIntoConstraints = false
         self.tableView.separatorStyle = .none
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        presenter.detachView()
+    }
+    
+    func renderError(errorMessage: String) {
+        let message = MDCSnackbarMessage()
+        message.text = errorMessage
+        MDCSnackbarManager.show(message)
+    }
+    
+    func renderLoading(visible: Bool) {
+        if visible {
+            view.showLoader()
+        } else {
+            view.hideLoader()
+        }
+    }
+    
+    func renderSocialLinkList(photoList: [SocialLinkModel]) {
+        self.socialList = photoList
+        self.tableView.reloadData()
+    }
 }
 
 extension ContactsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SocialCell", for: indexPath) as! IconImageCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SocialCell", for: indexPath) as! SocialCell
         cell.backgroundColor = UIColor.clear
         cell.selectionStyle = .none
         
-        // TODO: add missing data
-        cell.setupSocialCell()
+        cell.setup(socialModel: self.socialList[indexPath.row])
         
         return cell
     }
@@ -63,7 +91,8 @@ extension ContactsViewController: UITableViewDelegate, UITableViewDataSource {
         return self.socialList.count
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("item selected")
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {        
+        guard let url = URL(string: self.socialList[indexPath.row].url) else { return }
+        UIApplication.shared.open(url)
     }
 }
