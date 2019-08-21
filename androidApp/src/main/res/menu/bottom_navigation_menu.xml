@@ -3,19 +3,19 @@
 
     <item android:id="@+id/menu_events"
           android:icon="@drawable/ic_menu_events"
-          android:title="@string/menu_events"
-        />
+          android:title="@string/BOTTOM_BAR_events"
+    />
 
     <item android:id="@+id/menu_team"
           android:icon="@drawable/ic_menu_team"
-          android:title="@string/menu_team" />
+          android:title="@string/BOTTOM_BAR_about"/>
 
     <item android:id="@+id/menu_photo"
           android:icon="@drawable/ic_menu_photo"
-          android:title="@string/menu_photo" />
+          android:title="@string/BOTTOM_BAR_photo"/>
 
     <item android:id="@+id/menu_contacts"
           android:icon="@drawable/ic_menu_contacts"
-          android:title="@string/menu_contacts" />
+          android:title="@string/BOTTOM_BAR_contacts"/>
 
 </menu>
