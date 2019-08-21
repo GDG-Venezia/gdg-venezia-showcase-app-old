@@ -7,6 +7,7 @@
 
 import UIKit
 import app
+import MaterialComponents.MaterialSnackbar
 
 class EventViewController: UIViewController, EventListView {
     
@@ -46,8 +47,10 @@ class EventViewController: UIViewController, EventListView {
     
     
     func renderError(errorMessage: String) {
-        // TODO: implement
         print(errorMessage)
+        let message = MDCSnackbarMessage()
+        message.text = errorMessage
+        MDCSnackbarManager.show(message)
     }
     
     func renderLoading(visible: Bool) {

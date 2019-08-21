@@ -7,6 +7,7 @@
 
 import UIKit
 import app
+import MaterialComponents.MaterialSnackbar
 
 class AboutViewController: UIViewController, TeamView {
 
@@ -66,17 +67,16 @@ class AboutViewController: UIViewController, TeamView {
         self.tableView.separatorStyle = .none
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
-    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         presenter.detachView()
     }
     
     func renderError(errorMessage: String) {
-        //  TODO
+        print(errorMessage)
+        let message = MDCSnackbarMessage()
+        message.text = errorMessage
+        MDCSnackbarManager.show(message)
     }
     
     func renderLoading(visible: Bool) {
