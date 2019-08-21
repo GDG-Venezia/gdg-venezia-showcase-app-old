@@ -5,6 +5,7 @@
     style="@style/Widget.MaterialComponents.CardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:id="@+id/ITEM_SOCIAL_card"
     android:layout_marginLeft="@dimen/regular"
     android:layout_marginTop="@dimen/regular"
     android:layout_marginRight="@dimen/regular"
