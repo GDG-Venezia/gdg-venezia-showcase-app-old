@@ -1,5 +1,6 @@
 package com.github.gdgvenezia.domain
 
+import com.github.gdgvenezia.com.github.gdgvenezia.domain.entities.SocialLinkModel
 import com.github.gdgvenezia.domain.entities.PhotoModel
 import com.github.gdgvenezia.domain.entities.EventModel
 import com.github.gdgvenezia.domain.entities.TeamMemberModel
@@ -13,4 +14,5 @@ interface Repository {
     fun getFutureEventList(): List<EventModel>
     fun getTeamMemeberList(): List<TeamMemberModel>
     fun getPhotoList(): List<PhotoModel>
+    fun getSocialLinkList(): List<SocialLinkModel>
 }
